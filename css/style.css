@@ -1,1 +1,51 @@
 /* Här skrivs all din CSS */
+
+.container {
+    /* Layout */
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-rows: 10vh 50vh 80vh 40vh 10vh;
+        grid-template-areas: 
+        "head"
+        "art"
+        "sc1"
+        "sc2"
+        "ft";
+}
+
+header {
+    grid-area: head;
+    background-color: rgb(103, 71, 71);
+    
+     /* Layout */
+     display: grid;
+     grid-template-columns: 67% 33%;
+     grid-template-areas: 
+     "head nav";
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(255, 0, 0);
+}
+
+article {
+    grid-area: art;
+    background-color: rgb(103, 71, 71);
+}
+
+.sec1 {
+    grid-area: sc1;
+    background-color: rgb(103, 71, 71);
+}
+
+.sec2 {
+    grid-area: sc2;
+    background-color: rgba(91, 67, 170, 1);
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(103, 71, 71);
+}
